@@ -1,0 +1,110 @@
+body {
+    background-image: url('../img/fondo.jpg');
+    font-family: 'Nova Mono', monospace;
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    .table {
+        background-color: rgba(0, 0, 0, .5);
+        color: white;
+        font-size: 20px;
+    }
+    .titulos {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-family: 'Major Mono Display', monospace;
+        text-align: center;
+    }
+    .grid {
+        margin: 5vh 5vw;
+        display: grid;
+        text-align: center;
+        grid-template-areas: "uno uno dos dos tres tres" "uno uno dos dos tres tres" "uno uno dos dos tres tres";
+        gap: .5vw;
+        .uno {
+            grid-area: uno;
+            height: 53vh;
+        }
+        .dos {
+            grid-area: dos;
+            height: 53vh;
+        }
+        .tres {
+            grid-area: tres;
+            height: 53vh;
+        }
+    }
+    .videos {
+        margin: 3vh 0;
+        section {
+            display: inline;
+            iframe {
+                width: 43vw;
+                height: 50vh;
+            }
+        }
+    }
+    .contacto {
+        color: white;
+        display: flex;
+        justify-content: center;
+        div {
+            margin: 25px;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, .5);
+            border-radius: 10px;
+            height: auto;
+            padding: 2rem;
+            .btn-primary {
+                background-color: red;
+                border-color: red;
+            }
+        }
+    }
+    .historiaBanda {
+        height: 100vh;
+        background-image: url("../img/laBanda.jpg");
+        background-size: 100vw auto;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        .integrantes {
+            margin-bottom: 20vh;
+            bottom: 0;
+            list-style-type: none;
+            border-radius: 15px;
+            width: max-content;
+            height: max-content;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            line-height: 35px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, .5);
+            color: rgb(255, 255, 255);
+            ul {
+                list-style-type: none;
+            }
+        }
+    }
+    .indexMain {
+        display: flex;
+        margin-bottom: 2vw;
+        .carousel {
+            margin-left: 2vw;
+        }
+        .parrafo {
+            margin: 0 1vw;
+            width: 50vw;
+            border-radius: 15px;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            text-align: justify;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, .5);
+            color: rgb(255, 255, 255);
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@media (max-width: 993px) {
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    body {
+        .indexMain {
+            display: inline-block;
+            .carousel {
+                margin: 1vh 0;
+            }
+            .parrafo {
+                margin: 1vh 1vw;
+                width: auto;
+                font-size: 1rem;
+                line-height: 1.2rem;
+            }
+        }
+        .videos {
+            section {
+                margin: 1vh 1vw;
+                display: grid;
+                align-content: center;
+                iframe {
+                    width: 100vw;
+                    height: 30vh;
+                }
+            }
+        }
+        .grid {
+            display: inline;
+        }
+        .footer {
+            position: static;
+            display: grid;
+            justify-content: center;
+            .text {
+                font-size: 1rem;
+            }
+        }
+    }
+}
