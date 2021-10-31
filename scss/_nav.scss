@@ -1,5 +1,7 @@
+@import "variables";
+
 header {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $negro;
     .logo {
         display: flex;
         justify-content: center;
@@ -12,17 +14,17 @@ header {
         .navbar-nav {
             .nav-link {
                 margin: 0 3vw;
-                color: white;
+                color: $blanco;
                 &:hover {
-                    color: rgb(255, 0, 0);
+                    color: $rojo;
                 }
             }
             .nav-link.active {
-                color: red;
+                color: $rojo;
             }
         }
         .navbar-toggler {
-            border-color: white;
+            border-color: $blanco;
         }
         .navbar-toggler-icon {
             filter: invert(100%);

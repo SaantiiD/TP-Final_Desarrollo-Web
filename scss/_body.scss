@@ -1,13 +1,15 @@
+@import "variables";
+
 body {
-    background-image: url('../img/fondo.jpg');
+    background-image: url('../img/fondo.png');
     font-family: 'Nova Mono', monospace;
     h1 {
         text-align: center;
-        color: white;
+        color: $blanco;
     }
     .table {
-        background-color: rgba(0, 0, 0, .5);
-        color: white;
+        background-color: $negro;
+        color: $blanco;
         font-size: 20px;
     }
     .titulos {
@@ -46,27 +48,26 @@ body {
         }
     }
     .contacto {
-        color: white;
+        color: $blanco;
         display: flex;
         justify-content: center;
         div {
             margin: 25px;
         }
         .container {
-            background-color: rgba(0, 0, 0, .5);
+            background-color: $negro;
             border-radius: 10px;
             height: auto;
             padding: 2rem;
             .btn-primary {
-                background-color: red;
-                border-color: red;
+                background-color: $rojo;
+                border-color: $rojo;
             }
         }
     }
     .historiaBanda {
-        height: 100vh;
         background-image: url("../img/laBanda.jpg");
-        background-size: 100vw auto;
+        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: end;
@@ -82,8 +83,8 @@ body {
             line-height: 35px;
             text-align: center;
             padding: 20px;
-            background-color: rgba(0, 0, 0, .5);
-            color: rgb(255, 255, 255);
+            background-color: $negro;
+            color: $blanco;
             ul {
                 list-style-type: none;
             }
@@ -103,8 +104,8 @@ body {
             line-height: 1.8rem;
             text-align: justify;
             padding: 20px;
-            background-color: rgba(0, 0, 0, .5);
-            color: rgb(255, 255, 255);
+            background-color: $negro;
+            color: $blanco;
         }
     }
 }

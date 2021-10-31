@@ -59,7 +59,7 @@ header .navCentrado {
 }
 
 body {
-  background-image: url("../img/fondo.jpg");
+  background-image: url("../img/fondo.png");
   font-family: 'Nova Mono', monospace;
 }
 
@@ -157,9 +157,8 @@ body .contacto .container .btn-primary {
 }
 
 body .historiaBanda {
-  height: 100vh;
   background-image: url("../img/laBanda.jpg");
-  background-size: 100vw auto;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
