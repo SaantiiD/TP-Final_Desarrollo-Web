@@ -59,7 +59,8 @@ header .navCentrado {
 }
 
 body {
-  background-image: url("../img/fondo.png");
+  background-image: url("../img/fondo.jpg");
+  background-repeat: repeat;
   font-family: 'Nova Mono', monospace;
 }
 
@@ -157,22 +158,20 @@ body .contacto .container .btn-primary {
 }
 
 body .historiaBanda {
+  background-color: black;
   background-image: url("../img/laBanda.jpg");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  padding-top: 20rem;
 }
 
 body .historiaBanda .integrantes {
-  margin-bottom: 20vh;
-  bottom: 0;
   list-style-type: none;
   border-radius: 15px;
   width: -webkit-max-content;
@@ -182,8 +181,8 @@ body .historiaBanda .integrantes {
   height: -moz-max-content;
   height: max-content;
   font-size: 1.5rem;
-  letter-spacing: 1px;
-  line-height: 35px;
+  letter-spacing: 0.1vw;
+  line-height: 4vh;
   text-align: center;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -198,7 +197,8 @@ body .indexMain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 body .indexMain .carousel {
@@ -281,6 +281,13 @@ body .indexMain .parrafo {
   }
   body .grid {
     display: inline;
+  }
+  body .historiaBanda {
+    background-size: contain;
+    padding-top: 20rem;
+  }
+  body .historiaBanda .integrantes {
+    font-size: 1rem;
   }
   body .footer {
     position: static;
